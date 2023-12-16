@@ -11,6 +11,8 @@
 		25DF0DAF2B2E6CED00367257 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DF0DAE2B2E6CED00367257 /* ContentView.swift */; };
 		25DF0DB12B2E6CEE00367257 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25DF0DB02B2E6CEE00367257 /* Assets.xcassets */; };
 		25DF0DB42B2E6CEE00367257 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25DF0DB32B2E6CEE00367257 /* Preview Assets.xcassets */; };
+		25DF0DBB2B2E6DFF00367257 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DF0DBA2B2E6DFF00367257 /* CardView.swift */; };
+		25DF0DBD2B2E6E3300367257 /* GoalCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DF0DBC2B2E6E3300367257 /* GoalCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		25DF0DAE2B2E6CED00367257 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		25DF0DB02B2E6CEE00367257 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		25DF0DB32B2E6CEE00367257 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		25DF0DBA2B2E6DFF00367257 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		25DF0DBC2B2E6E3300367257 /* GoalCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +55,10 @@
 		25DF0DAB2B2E6CED00367257 /* Move2Burn2 */ = {
 			isa = PBXGroup;
 			children = (
-				25DF0DAC2B2E6CED00367257 /* Move2Burn2App.swift */,
+				25DF0DBA2B2E6DFF00367257 /* CardView.swift */,
+				25DF0DBC2B2E6E3300367257 /* GoalCardView.swift */,
 				25DF0DAE2B2E6CED00367257 /* ContentView.swift */,
+				25DF0DAC2B2E6CED00367257 /* Move2Burn2App.swift */,
 				25DF0DB02B2E6CEE00367257 /* Assets.xcassets */,
 				25DF0DB22B2E6CEE00367257 /* Preview Content */,
 			);
@@ -138,6 +144,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				25DF0DAF2B2E6CED00367257 /* ContentView.swift in Sources */,
+				25DF0DBD2B2E6E3300367257 /* GoalCardView.swift in Sources */,
+				25DF0DBB2B2E6DFF00367257 /* CardView.swift in Sources */,
 				25DF0DAD2B2E6CED00367257 /* Move2Burn2App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
