@@ -31,6 +31,9 @@ struct ContentView: View {
             .padding(.horizontal)
         }
         .environmentObject(manager)
+        .onAppear {
+            manager.fetchTodaysCalories()
+        }
     }
 }
 struct ContentView_Previews: PreviewProvider {
