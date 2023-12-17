@@ -7,38 +7,42 @@
 
 import SwiftUI
 
-struct CardView: View {
-    
+struct Activity {
+    let id: Int
     let symbol : Image
     let title : String
     let subtitle: String
+    
+}
+
+struct CardView: View {
+    @State var activity: Activity
     
     var body: some View {
         ZStack {
             Color(uiColor: .systemGray6)
                 .cornerRadius(15)
             HStack {
-                Text(symbol)
+                Text(activity.symbol)
                     .font(.custom("SegoeUI-Bold", size: 40))
                     .foregroundColor(.green)
                 Spacer()
                     .frame(width: 40)
                 VStack {
-                    Text(title)
+                    Text(activity.title)
                         .font(.custom("SegoeUI-Bold", size: 15))
-                                        .foregroundColor(.black)
+                        .foregroundColor(.black)
                     Spacer()
                         .frame(height: 10)
-                    Text(subtitle)
+                    Text(activity.subtitle)
                         .font(.custom("SegoeUI-Bold", size: 10))
-                                        .foregroundColor(.black)
+                        .foregroundColor(.black)
                 }
             }
         }
         .frame(width: 180, height: 60)
     }
 }
-
 #Preview {
-    CardView(symbol: Image(systemName: "figure.walk"), title: "Walking", subtitle: "23.235")
+    CardView(activity: Activity(id: 0, symbol: Image(systemName: "figure.walk"), title: "Walking", subtitle: "23.235"))
 }

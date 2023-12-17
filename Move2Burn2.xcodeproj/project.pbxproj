@@ -13,6 +13,7 @@
 		25DF0DB42B2E6CEE00367257 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25DF0DB32B2E6CEE00367257 /* Preview Assets.xcassets */; };
 		25DF0DBB2B2E6DFF00367257 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DF0DBA2B2E6DFF00367257 /* CardView.swift */; };
 		25DF0DBD2B2E6E3300367257 /* GoalCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DF0DBC2B2E6E3300367257 /* GoalCardView.swift */; };
+		25DF0DC02B2E71F000367257 /* HealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DF0DBF2B2E71F000367257 /* HealthManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		25DF0DB32B2E6CEE00367257 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		25DF0DBA2B2E6DFF00367257 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		25DF0DBC2B2E6E3300367257 /* GoalCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalCardView.swift; sourceTree = "<group>"; };
+		25DF0DBF2B2E71F000367257 /* HealthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,9 +57,8 @@
 		25DF0DAB2B2E6CED00367257 /* Move2Burn2 */ = {
 			isa = PBXGroup;
 			children = (
-				25DF0DBA2B2E6DFF00367257 /* CardView.swift */,
-				25DF0DBC2B2E6E3300367257 /* GoalCardView.swift */,
-				25DF0DAE2B2E6CED00367257 /* ContentView.swift */,
+				25DF0DBE2B2E71DC00367257 /* Environment */,
+				25DF0DC12B2E764400367257 /* Screens */,
 				25DF0DAC2B2E6CED00367257 /* Move2Burn2App.swift */,
 				25DF0DB02B2E6CEE00367257 /* Assets.xcassets */,
 				25DF0DB22B2E6CEE00367257 /* Preview Content */,
@@ -71,6 +72,24 @@
 				25DF0DB32B2E6CEE00367257 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		25DF0DBE2B2E71DC00367257 /* Environment */ = {
+			isa = PBXGroup;
+			children = (
+				25DF0DBF2B2E71F000367257 /* HealthManager.swift */,
+			);
+			path = Environment;
+			sourceTree = "<group>";
+		};
+		25DF0DC12B2E764400367257 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				25DF0DAE2B2E6CED00367257 /* ContentView.swift */,
+				25DF0DBA2B2E6DFF00367257 /* CardView.swift */,
+				25DF0DBC2B2E6E3300367257 /* GoalCardView.swift */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,6 +166,7 @@
 				25DF0DBD2B2E6E3300367257 /* GoalCardView.swift in Sources */,
 				25DF0DBB2B2E6DFF00367257 /* CardView.swift in Sources */,
 				25DF0DAD2B2E6CED00367257 /* Move2Burn2App.swift in Sources */,
+				25DF0DC02B2E71F000367257 /* HealthManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +303,7 @@
 				DEVELOPMENT_TEAM = 2B36LRLM7A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "\"Allow access to use the feature of the application\"";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -312,6 +333,7 @@
 				DEVELOPMENT_TEAM = 2B36LRLM7A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "\"Allow access to use the feature of the application\"";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

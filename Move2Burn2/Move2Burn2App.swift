@@ -8,10 +8,12 @@
 import SwiftUI
 
 @main
-struct Move2Burn2App: App {
+struct Move2BurnApp: App {
+    @StateObject var manager = HealthManager()
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(manager)
         }
     }
 }
